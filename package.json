@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/osc707/11ty-simple-page-post-creator#readme",
   "dependencies": {
+    "esm": "^3.2.25",
     "inquirer": "^7.1.0",
     "luxon": "^1.24.0"
   }

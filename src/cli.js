@@ -4,7 +4,7 @@ import inquirer from 'inquirer';
 import DateTime from 'luxon/src/datetime.js';
 
 async function makeFile(answers) {
-  const blogDate = `${DateTime.local().format('yyyy-MM-dd')}`; // YYYY-mm-dd
+  const blogDate = `${DateTime.local().toFormat('yyyy-MM-dd')}`; // YYYY-mm-dd
   const isPage = 'BlogPost' !== answers.templateType;
   const rawFileName = (answers.fileName || 'new-file');
   const fileName =  (answers.fileName || 'new-file').replace(/[\W_]+/g, '-').toLowerCase();
