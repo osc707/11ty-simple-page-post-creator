@@ -1,0 +1,34 @@
+{
+  "name": "11ty-simple-page-post-creator",
+  "version": "0.0.1",
+  "description": "A simple cli to create posts or pages with 11ty",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "src/cli.js",
+  "bin": "./bin/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osc707/11ty-simple-page-post-creator.git"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "page creator",
+    "post creator"
+  ],
+  "author": {
+    "name": "Oscar Campos",
+    "email": "oscar.s.campos@gmail.com",
+    "url": "http://www.oscarscampos.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osc707/11ty-simple-page-post-creator/issues"
+  },
+  "homepage": "https://github.com/osc707/11ty-simple-page-post-creator#readme",
+  "dependencies": {
+    "inquirer": "^7.1.0",
+    "luxon": "^1.24.0"
+  }
+}
