@@ -1,6 +1,6 @@
 {
   "name": "@oscarcampos/11ty-simple-page-post-creator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple cli to create posts or pages with 11ty",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
