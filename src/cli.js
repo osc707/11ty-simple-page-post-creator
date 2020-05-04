@@ -28,7 +28,7 @@ async function makeFile(answers) {
     '   <img\r\n src=""\r\n class="hero-image"\r\n alt="">\r\n' +
     ' </div>\r\n\r\n' +
     '-->\r\n\r\n' +
-    '<div class="slimmer">\r\n\r\n' +
+    '<div>\r\n\r\n' +
     '<h1>{{ title }}</h1>\r\n\r\n' +
     '</div>'
     :
