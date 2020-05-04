@@ -10,4 +10,5 @@ The to run `11ty-simple-page-post-creator` and follow the prompts:
 * Enter a Title for your Blog/Page: <enter title>
 
 Pages use the templating engine `njk` and are created at the __root__
+
 Blogs use the templating engine `md` and are created under __posts__ directory
