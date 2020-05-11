@@ -3,7 +3,8 @@
   "version": "0.0.4",
   "description": "A simple cli to create posts or pages with 11ty",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "git push && git push --tags"
   },
   "main": "src/cli.js",
   "bin": "./bin/main.js",
