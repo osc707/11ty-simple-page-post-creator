@@ -1,6 +1,6 @@
 {
   "name": "@oscarcampos/11ty-simple-page-post-creator",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A simple cli to create posts or pages with 11ty",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/osc707/11ty-simple-page-post-creator#readme",
   "dependencies": {
+    "date-fns": "^2.27.0",
     "esm": "^3.2.25",
-    "inquirer": "^7.1.0",
-    "luxon": "^1.24.0"
+    "inquirer": "^8.2.0"
   }
 }

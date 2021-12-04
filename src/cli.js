@@ -1,14 +1,15 @@
 #!/usr/bin/env
+
 import fs from 'fs';
+import { format } from 'date-fns'
 import inquirer from 'inquirer';
-import DateTime from 'luxon/src/datetime.js';
 
 async function makeFile(answers) {
-  const blogDate = `${DateTime.local().toFormat('yyyy-MM-dd')}`; // YYYY-mm-dd
+  const blogDate = `${format(new Date(), 'yyyy-MM-dd')}`; // YYYY-mm-dd
   const isPage = 'BlogPost' !== answers.templateType;
   const rawFileName = (answers.fileName || 'new-file');
   const fileName =  (answers.fileName || 'new-file').replace(/[\W_]+/g, '-').toLowerCase();
-  const fileFolder = isPage ? './' : './blog/';
+  let fileFolder = isPage ? './' : './blog/';
   const fileExtension = isPage ? '.njk' : '.md';
   const fileContents = isPage ? '---\r\n' +
     'layout: layouts/home.njk\r\n' +
@@ -53,6 +54,10 @@ async function makeFile(answers) {
     '-->\r\n\r\n' +
     '\r\n\r\n' +
     '# {{ title }}\r\n\r\n';
+
+  if (!isPage && !fs.existsSync(fileFolder)) { // blog not found, so using posts
+    fileFolder = './posts/';
+  }
 
   const data = new Uint8Array(Buffer.from(fileContents));
   const wholeFileName = `${fileFolder}${fileName}${fileExtension}`;
